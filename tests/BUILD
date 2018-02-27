@@ -109,6 +109,13 @@ rule_test(
 )
 
 rule_test(
+  name = "test-haskell_repl",
+  generates = ["haskell_repl"],
+  rule = "//tests/haskell_repl:haskell_repl",
+  size = "small",
+)
+
+rule_test(
   name = "test-haskell_test",
   generates = ["haskell_test"],
   rule = "//tests/haskell_test:haskell_test",
